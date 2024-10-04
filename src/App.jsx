@@ -4,6 +4,10 @@ import TabButton from "./components/TabButton.jsx";
 import { CORE_CONCEPTS } from "./data.js";
 
 function App() {
+  function handleButtonOnClick(selectedButton) {
+    console.log(selectedButton);
+  }
+
   return (
     <div>
       <Header />
@@ -24,10 +28,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>PROPS</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onClickFunc={() => handleButtonOnClick('Components')}>Components</TabButton>
+            <TabButton onClickFunc={() => handleButtonOnClick('JSX')}>JSX</TabButton>
+            <TabButton onClickFunc={() => handleButtonOnClick('props')}>PROPS</TabButton>
+            <TabButton onClickFunc={() => handleButtonOnClick('State')}>State</TabButton>
           </menu>
         </section>
       </main>

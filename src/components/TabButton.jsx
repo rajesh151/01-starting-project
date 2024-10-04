@@ -1,11 +1,7 @@
-export default function TabButton({ children }) {
-
-    function handleButtonOnClick() {
-console.log("Click on Button");
-    };
+export default function TabButton({ children, onClickFunc}) {
   return (
     <li>
-      <button onClick={handleButtonOnClick} >{children}</button>
+      <button onClick={onClickFunc}>{children}</button>
     </li>
   );
 }
