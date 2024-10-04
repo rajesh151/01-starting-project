@@ -3,7 +3,6 @@ import CoreConcepts from "./components/CoreConcepts.jsx";
 import TabButton from "./components/TabButton.jsx";
 import { CORE_CONCEPTS } from "./data.js";
 
-
 function App() {
   return (
     <div>
@@ -23,11 +22,10 @@ function App() {
           </ul>
         </section>
         <section id="examples">
-          <h2>Examples</h2> 
+          <h2>Examples</h2>
           <menu>
-
+            <TabButton>Components</TabButton>
           </menu>
-
         </section>
       </main>
     </div>
